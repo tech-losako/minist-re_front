@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ministère Provincial de la Jeunesse, Sports & Loisirs, Culture & Arts</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: "#007fff",
+            softPrimary: "#edf2fc",
+            heading: "#343f52",
+            body: "#60697b",
+            danger: "#e51b22"
+          },
+          fontFamily: {
+            sans: ["Manrope", "Arial", "sans-serif"]
+          },
+          boxShadow: {
+            card: "0 0.25rem 1.75rem rgba(30,34,40,.07)"
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/experience.css">
+</head>
+<body class="bg-white font-sans text-[16px] font-medium leading-7 text-body">
+  <div id="top"></div>
+  <header class="relative z-40 bg-white shadow-sm">
+    <div class="hidden bg-primary text-white md:block">
+      <div class="mx-auto flex max-w-7xl items-center gap-8 px-6 py-2 text-[15px] font-bold">
+        <div class="flex items-center gap-2">
+          <span class="text-xl">⌖</span>
+          <span>Kinshasa - Gombe, le 08 Mai 2026</span>
+        </div>
+        <a href="tel:+243826056802" class="ml-auto flex items-center gap-2 text-white">
+          <span class="text-xl">☎</span>
+          <span>+243 826056802</span>
+        </a>
+        <a href="mailto:infos@minprov-jeslca.cd" class="flex items-center gap-2 text-white">
+          <span class="text-xl">✉</span>
+          <span>infos@minprov-jeslca.cd</span>
+        </a>
+      </div>
+    </div>
+
+    <nav class="relative">
+      <div class="mx-auto flex max-w-7xl items-center px-6 py-4">
+        <a href="index.html" class="flex w-full max-w-[270px] items-center gap-3">
+          <span class="flex h-14 w-14 shrink-0 items-center justify-center rounded-xl bg-primary text-xl font-extrabold text-white">JS</span>
+          <span class="text-[14px] font-extrabold uppercase leading-5 text-heading">Ministère provincial<br>JSLCA</span>
+        </a>
+
+        <button id="menuBtn" class="ml-auto rounded-md p-2 text-heading lg:hidden" aria-label="Ouvrir le menu">
+          <span class="block h-0.5 w-7 bg-heading"></span>
+          <span class="mt-1.5 block h-0.5 w-7 bg-heading"></span>
+          <span class="mt-1.5 block h-0.5 w-7 bg-heading"></span>
+        </button>
+
+        <div id="mainMenu" class="fixed inset-y-0 left-0 hidden w-80 bg-[#1f2733] p-7 text-white shadow-2xl lg:static lg:ml-auto lg:block lg:w-auto lg:bg-transparent lg:p-0 lg:text-heading lg:shadow-none">
+          <div class="mb-8 flex items-center justify-between lg:hidden">
+            <h3 class="text-2xl font-extrabold">Ministère</h3>
+            <button id="closeMenu" class="text-3xl leading-none" aria-label="Fermer le menu">&times;</button>
+          </div>
+          <ul class="flex flex-col gap-1 text-[15px] font-extrabold lg:flex-row lg:items-center lg:gap-2">
+            <li><a class="block rounded-md px-3 py-2 hover:text-primary" href="index.html">Accueil</a></li>
+            <li class="group relative">
+              <button class="flex w-full items-center justify-between rounded-md px-3 py-2 hover:text-primary">Le Ministère <span class="lg:ml-1">⌄</span></button>
+              <ul class="hidden rounded-md bg-white py-2 text-heading shadow-card group-hover:block lg:absolute lg:left-0 lg:top-full lg:min-w-60">
+                <li><a class="block px-4 py-2 hover:text-primary" href="le-ministere.html">Présentation</a></li>
+                <li><a class="block px-4 py-2 hover:text-primary" href="le-ministere.html#historique">Historique</a></li>
+                <li><a class="block px-4 py-2 hover:text-primary" href="le-ministere.html#missions">Vision & missions</a></li>
+                <li><a class="block px-4 py-2 hover:text-primary" href="le-ministere.html#cabinet">Cabinet du Ministre</a></li>
+                <li><a class="block px-4 py-2 hover:text-primary" href="le-ministere.html#organigramme">Organigramme</a></li>
+              </ul>
+            </li>
+            <li class="group relative">
+              <button class="flex w-full items-center justify-between rounded-md px-3 py-2 hover:text-primary">Jeunesse <span class="lg:ml-1">⌄</span></button>
+              <ul class="hidden rounded-md bg-white py-2 text-heading shadow-card group-hover:block lg:absolute lg:left-0 lg:top-full lg:min-w-60">
+                <li><a class="block px-4 py-2 hover:text-primary" href="jeunesse.html">Programmes jeunesse</a></li>
+                <li><a class="block px-4 py-2 hover:text-primary" href="jeunesse.html#entrepreneuriat">Entrepreneuriat</a></li>
+                <li><a class="block px-4 py-2 hover:text-primary" href="jeunesse.html#formation">Formation</a></li>
+                <li><a class="block px-4 py-2 hover:text-primary" href="jeunesse.html#appels">Appels à projets</a></li>
+              </ul>
+            </li>
+            <li><a class="block rounded-md px-3 py-2 hover:text-primary" href="sports-loisirs.html">Sports & Loisirs</a></li>
+            <li><a class="block rounded-md px-3 py-2 hover:text-primary" href="culture-arts.html">Culture & Arts</a></li>
+            <li><a class="block rounded-md px-3 py-2 hover:text-primary" href="actualites.html">Actualités</a></li>
+            <li><a class="block rounded-md px-3 py-2 hover:text-primary" href="medias.html">Médias</a></li>
+            <li><a class="block rounded-md px-3 py-2 hover:text-primary" href="partenaires.html">Partenaires</a></li>
+          </ul>
+        </div>
+
+        <a href="contact.html" class="ml-5 hidden rounded-[10px] bg-primary px-5 py-2.5 text-sm font-extrabold text-white shadow-card md:inline-flex">Contact</a>
+      </div>
+      <div class="absolute bottom-0 left-0 flex h-[5px] w-full">
+        <span class="flex-1 bg-[#159ada]"></span>
+        <span class="flex-1 bg-[#fbef00]"></span>
+        <span class="flex-1 bg-[#e51b22]"></span>
+      </div>
+    </nav>
+  </header>
+
+  <main id="accueil">
+    <section class="relative h-[500px] overflow-hidden bg-black md:h-[800px]">
+      <div id="carousel" class="h-full">
+        <div class="slide is-active absolute inset-0 opacity-100 transition-opacity duration-700">
+          <img src="assets/img/carousel-1.jpg" alt="Jeunesse kinoise" class="h-full w-full object-cover">
+        </div>
+        <div class="slide absolute inset-0 opacity-0 transition-opacity duration-700">
+          <img src="assets/img/carousel-2.jpg" alt="Culture congolaise" class="h-full w-full object-cover">
+        </div>
+        <div class="slide absolute inset-0 opacity-0 transition-opacity duration-700">
+          <img src="assets/img/carousel-3.jpg" alt="Sports et loisirs" class="h-full w-full object-cover">
+        </div>
+        <div class="slide absolute inset-0 opacity-0 transition-opacity duration-700">
+          <img src="assets/img/carousel-4.jpg" alt="Arts et événements" class="h-full w-full object-cover">
+        </div>
+      </div>
+      <div class="absolute inset-0 bg-black/10"></div>
+      <div class="hero-caption minister-gradient absolute bottom-[15%] left-[5%] right-[5%] rounded-[10px] p-6 text-center text-white md:bottom-1/4 md:left-[18%] md:right-[18%] md:p-8">
+        <h1 class="mb-4 text-2xl font-extrabold leading-tight md:text-[35px]">MINISTÈRE PROVINCIAL DE LA JEUNESSE, SPORTS & LOISIRS, CULTURE & ARTS</h1>
+        <p class="mb-6 text-lg font-extrabold leading-snug md:text-[25px]">“Encadrer la jeunesse, promouvoir la culture, développer les talents.”</p>
+        <p class="mx-auto mb-6 max-w-3xl text-sm font-bold md:text-base">Le Ministère provincial œuvre pour l’épanouissement de la jeunesse kinoise, la valorisation des talents, le développement du sport et la promotion de la culture congolaise.</p>
+        <div class="flex flex-wrap justify-center gap-3">
+          <a href="jeunesse.html#appels" class="pulse-ring rounded-[10px] bg-danger px-5 py-3 text-sm font-extrabold text-white">Découvrir nos projets</a>
+          <a href="actualites.html" class="rounded-[10px] bg-white px-5 py-3 text-sm font-extrabold text-primary">Voir les actualités</a>
+        </div>
+      </div>
+      <div class="absolute bottom-0 left-0 h-1 w-full bg-white/25"><div class="carousel-progress h-full bg-danger"></div></div>
+      <button id="prevSlide" class="absolute left-4 top-1/2 hidden h-12 w-12 -translate-y-1/2 rounded-full border-2 border-white/30 bg-primary text-3xl text-white shadow-card md:block">‹</button>
+      <button id="nextSlide" class="absolute right-4 top-1/2 hidden h-12 w-12 -translate-y-1/2 rounded-full border-2 border-white/30 bg-primary text-3xl text-white shadow-card md:block">›</button>
+      <div class="absolute bottom-6 left-1/2 flex -translate-x-1/2 gap-2">
+        <button class="dot h-5 w-5 rounded-md bg-white"></button>
+        <button class="dot h-5 w-5 rounded-md bg-white/50"></button>
+        <button class="dot h-5 w-5 rounded-md bg-white/50"></button>
+        <button class="dot h-5 w-5 rounded-md bg-white/50"></button>
+      </div>
+    </section>
+
+    <section class="bg-primary text-white">
+      <div class="mx-auto grid max-w-7xl gap-6 px-6 py-10 text-center md:grid-cols-4">
+        <div class="rounded-[10px] bg-white/10 p-6">
+          <div class="text-4xl font-extrabold" data-count="4" data-suffix="+">0</div>
+          <p class="mt-1 font-bold">programmes phares</p>
+        </div>
+        <div class="rounded-[10px] bg-white/10 p-6">
+          <div class="text-4xl font-extrabold" data-count="6" data-suffix="+">0</div>
+          <p class="mt-1 font-bold">domaines d'appui</p>
+        </div>
+        <div class="rounded-[10px] bg-white/10 p-6">
+          <div class="text-4xl font-extrabold" data-count="5" data-suffix="+">0</div>
+          <p class="mt-1 font-bold">types de partenaires</p>
+        </div>
+        <div class="rounded-[10px] bg-white/10 p-6">
+          <div class="text-4xl font-extrabold" data-count="2026">0</div>
+          <p class="mt-1 font-bold">agenda culturel & sportif</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-white">
+      <div class="mx-auto grid max-w-7xl items-center gap-10 px-6 py-20 lg:grid-cols-2">
+        <div>
+          <h2 class="mb-3 text-sm font-extrabold uppercase tracking-wide text-primary">Bienvenue</h2>
+          <h3 class="mb-6 text-4xl font-extrabold leading-tight text-heading">Mot du Ministre</h3>
+          <p class="mb-5">Bienvenue sur le site officiel du Ministère provincial de la Jeunesse, Sports & Loisirs, Culture & Arts.</p>
+          <p class="mb-5">Notre mission est de créer un environnement favorable à l’émergence des jeunes talents, au développement du sport, à la promotion des loisirs sains ainsi qu’au rayonnement de la culture et des arts à Kinshasa.</p>
+          <p class="mb-7">À travers nos programmes, événements et partenariats, nous voulons offrir à chaque jeune l’opportunité de participer activement au développement de notre province.</p>
+          <a href="#missions" class="inline-flex rounded-full bg-primary px-6 py-3 font-extrabold text-white">Découvrir nos missions</a>
+        </div>
+        <img src="assets/img/about.jpg" alt="À propos du Ministère" class="h-[400px] w-full rounded-[10px] object-cover md:h-[600px]">
+      </div>
+    </section>
+
+    <section id="missions" class="bg-softPrimary">
+      <div class="mx-auto max-w-7xl px-6 py-20">
+        <div class="mx-auto mb-12 max-w-3xl text-center">
+          <h2 class="mb-3 text-sm font-extrabold uppercase tracking-wide text-primary">Nos Missions</h2>
+          <h3 class="mb-5 text-4xl font-extrabold text-heading">Au service de la jeunesse, du sport et de la culture</h3>
+          <p>Le Ministère accompagne les talents, renforce les initiatives locales et soutient les projets qui font rayonner Kinshasa.</p>
+        </div>
+        <div class="grid gap-8 md:grid-cols-3">
+          <article class="lift-card rounded-[10px] bg-white p-8 shadow-card">
+            <div class="mb-5 flex h-14 w-14 items-center justify-center rounded-full bg-softPrimary text-2xl text-primary">★</div>
+            <h4 class="mb-3 text-xl font-extrabold text-heading">Jeunesse</h4>
+            <p>Encadrement, formation, entrepreneuriat et accompagnement des jeunes.</p>
+          </article>
+          <article class="lift-card rounded-[10px] bg-white p-8 shadow-card">
+            <div class="mb-5 flex h-14 w-14 items-center justify-center rounded-full bg-softPrimary text-2xl text-primary">⚑</div>
+            <h4 class="mb-3 text-xl font-extrabold text-heading">Sports & Loisirs</h4>
+            <p>Promotion du sport, organisation d’activités sportives et développement des loisirs.</p>
+          </article>
+          <article class="lift-card rounded-[10px] bg-white p-8 shadow-card">
+            <div class="mb-5 flex h-14 w-14 items-center justify-center rounded-full bg-softPrimary text-2xl text-primary">✦</div>
+            <h4 class="mb-3 text-xl font-extrabold text-heading">Culture & Arts</h4>
+            <p>Valorisation du patrimoine culturel, soutien aux artistes et promotion des industries créatives.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="actualites" class="bg-white">
+      <div class="mx-auto max-w-7xl px-6 py-20">
+        <div class="mx-auto mb-12 max-w-3xl text-center">
+          <h2 class="mb-3 text-sm font-extrabold uppercase tracking-wide text-primary">Restez Informés</h2>
+          <h3 class="mb-5 text-4xl font-extrabold text-heading">Actualités Récentes</h3>
+          <p>Suivez les dernières nouvelles et annonces du Ministère provincial.</p>
+        </div>
+        <div class="grid gap-8 lg:grid-cols-3">
+          <article class="lift-card overflow-hidden rounded-[10px] bg-white shadow-card">
+            <div class="relative h-56 overflow-hidden">
+              <img src="assets/img/article-1.jpg" alt="Signature d'un protocole" class="h-full w-full object-cover transition duration-500 hover:scale-105">
+              <div class="absolute bottom-0 left-0 flex h-[3px] w-full"><span class="flex-1 bg-[#159ada]"></span><span class="flex-1 bg-[#fbef00]"></span><span class="flex-1 bg-[#e51b22]"></span></div>
+            </div>
+            <div class="p-6">
+              <h4 class="mb-4 text-xl font-extrabold leading-tight text-heading">Signature d’un protocole d’accord avec l’Ambassade de France</h4>
+              <p>Le Ministère provincial renforce sa coopération culturelle et artistique avec plusieurs partenaires internationaux.</p>
+            </div>
+            <div class="flex items-center border-t border-slate-100 px-6 py-4 text-sm font-bold text-heading">
+              <span>08 Mai 2026</span>
+              <a class="ml-auto rounded-md bg-primary px-4 py-1.5 text-white" href="#">En savoir plus</a>
+            </div>
+          </article>
+          <article class="lift-card overflow-hidden rounded-[10px] bg-white shadow-card">
+            <div class="relative h-56 overflow-hidden">
+              <img src="assets/img/article-2.jpg" alt="Festival Papa Wemba" class="h-full w-full object-cover transition duration-500 hover:scale-105">
+              <div class="absolute bottom-0 left-0 flex h-[3px] w-full"><span class="flex-1 bg-[#159ada]"></span><span class="flex-1 bg-[#fbef00]"></span><span class="flex-1 bg-[#e51b22]"></span></div>
+            </div>
+            <div class="p-6">
+              <h4 class="mb-4 text-xl font-extrabold leading-tight text-heading">Festival Que Viva Papa Wemba</h4>
+              <p>Une grande célébration organisée au Pullman, à l’Académie des Beaux-Arts et à Molokai pour honorer son héritage.</p>
+            </div>
+            <div class="flex items-center border-t border-slate-100 px-6 py-4 text-sm font-bold text-heading">
+              <span>25 Avril 2026</span>
+              <a class="ml-auto rounded-md bg-primary px-4 py-1.5 text-white" href="#">En savoir plus</a>
+            </div>
+          </article>
+          <article class="lift-card overflow-hidden rounded-[10px] bg-white shadow-card">
+            <div class="relative h-56 overflow-hidden">
+              <img src="assets/img/article-3.jpg" alt="Jeux de Kinshasa" class="h-full w-full object-cover transition duration-500 hover:scale-105">
+              <div class="absolute bottom-0 left-0 flex h-[3px] w-full"><span class="flex-1 bg-[#159ada]"></span><span class="flex-1 bg-[#fbef00]"></span><span class="flex-1 bg-[#e51b22]"></span></div>
+            </div>
+            <div class="p-6">
+              <h4 class="mb-4 text-xl font-extrabold leading-tight text-heading">Jeux de Kinshasa et Fête de la Musique</h4>
+              <p>De nouvelles activités sportives et culturelles renforcent la participation citoyenne et la cohésion sociale.</p>
+            </div>
+            <div class="flex items-center border-t border-slate-100 px-6 py-4 text-sm font-bold text-heading">
+              <span>15 Avril 2026</span>
+              <a class="ml-auto rounded-md bg-primary px-4 py-1.5 text-white" href="#">En savoir plus</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="programmes" class="bg-softPrimary">
+      <div class="mx-auto max-w-7xl px-6 py-20">
+        <div class="mx-auto mb-12 max-w-3xl text-center">
+          <h2 class="mb-3 text-sm font-extrabold uppercase tracking-wide text-primary">Nos Programmes</h2>
+          <h3 class="mb-5 text-4xl font-extrabold text-heading">Projets culturels, sportifs et jeunesse</h3>
+          <div class="mt-8 flex flex-wrap justify-center gap-3">
+            <button class="interactive-chip is-active rounded-full bg-white px-5 py-2 font-extrabold text-heading shadow-card" data-focus="tout" type="button">Tout</button>
+            <button class="interactive-chip rounded-full bg-white px-5 py-2 font-extrabold text-heading shadow-card" data-focus="jeunesse" type="button">Jeunesse</button>
+            <button class="interactive-chip rounded-full bg-white px-5 py-2 font-extrabold text-heading shadow-card" data-focus="culture" type="button">Culture</button>
+            <button class="interactive-chip rounded-full bg-white px-5 py-2 font-extrabold text-heading shadow-card" data-focus="sport" type="button">Sport</button>
+            <button class="interactive-chip rounded-full bg-white px-5 py-2 font-extrabold text-heading shadow-card" data-focus="talents" type="button">Talents</button>
+          </div>
+        </div>
+        <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+          <div class="lift-card rounded-[10px] bg-white p-7 shadow-card" data-focus-card="jeunesse"><h4 class="mb-3 text-lg font-extrabold text-heading">Programme Jeunesse Active</h4><p>Formation et accompagnement des jeunes entrepreneurs.</p></div>
+          <div class="lift-card rounded-[10px] bg-white p-7 shadow-card" data-focus-card="culture"><h4 class="mb-3 text-lg font-extrabold text-heading">Culture pour Tous</h4><p>Promotion des artistes et des événements culturels.</p></div>
+          <div class="lift-card rounded-[10px] bg-white p-7 shadow-card" data-focus-card="sport"><h4 class="mb-3 text-lg font-extrabold text-heading">Sport pour la Paix</h4><p>Initiatives sportives pour renforcer la cohésion sociale.</p></div>
+          <div class="lift-card rounded-[10px] bg-white p-7 shadow-card" data-focus-card="talents"><h4 class="mb-3 text-lg font-extrabold text-heading">Talents de Kinshasa</h4><p>Détection et accompagnement des jeunes artistes et sportifs.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="medias" class="bg-white">
+      <div class="mx-auto max-w-7xl px-6 py-20">
+        <div class="mx-auto mb-12 max-w-3xl text-center">
+          <h2 class="mb-3 text-sm font-extrabold uppercase tracking-wide text-primary">Galerie</h2>
+          <h3 class="mb-5 text-4xl font-extrabold text-heading">Photos / Vidéos</h3>
+          <p>Festivals, concerts, activités sportives, rencontres officielles et actions communautaires.</p>
+        </div>
+        <div class="grid gap-5 md:grid-cols-3">
+          <figure class="gallery-item rounded-[10px] shadow-card"><img src="assets/img/galerie-1.jpg" alt="Festival" class="h-72 w-full object-cover"></figure>
+          <figure class="gallery-item rounded-[10px] shadow-card"><img src="assets/img/galerie-2.jpg" alt="Concert" class="h-72 w-full object-cover"></figure>
+          <figure class="gallery-item rounded-[10px] shadow-card"><img src="assets/img/galerie-5.png" alt="Activités sportives" class="h-72 w-full object-cover"></figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="jeunesse" class="bg-softPrimary">
+      <div class="mx-auto grid max-w-7xl gap-8 px-6 py-20 lg:grid-cols-3">
+        <div>
+          <h2 class="mb-3 text-sm font-extrabold uppercase tracking-wide text-primary">Domaines</h2>
+          <h3 class="text-4xl font-extrabold text-heading">Jeunesse, Sports & Culture</h3>
+        </div>
+        <div class="rounded-[10px] bg-white p-7 shadow-card" id="sports"><h4 class="mb-3 text-xl font-extrabold text-heading">Sports & Loisirs</h4><p>Activités sportives, calendrier des compétitions, partenariats et infrastructures.</p></div>
+        <div class="rounded-[10px] bg-white p-7 shadow-card" id="culture"><h4 class="mb-3 text-xl font-extrabold text-heading">Culture & Arts</h4><p>Festivals, artistes, patrimoine culturel et projets artistiques.</p></div>
+      </div>
+    </section>
+
+    <section class="bg-white">
+      <div class="mx-auto grid max-w-7xl gap-10 px-6 py-20 lg:grid-cols-2">
+        <div id="appels" class="rounded-[10px] bg-softPrimary p-8 shadow-card">
+          <h2 class="mb-3 text-sm font-extrabold uppercase tracking-wide text-primary">Appels à Projets</h2>
+          <h3 class="mb-5 text-3xl font-extrabold text-heading">Le Ministère accompagne les initiatives des jeunes</h3>
+          <div class="mb-7 grid grid-cols-2 gap-3 text-heading">
+            <span>Culture</span><span>Musique</span><span>Sport</span><span>Innovation</span><span>Entrepreneuriat</span><span>Audiovisuel</span>
+          </div>
+          <a href="contact.html" class="inline-flex rounded-[10px] bg-danger px-5 py-3 font-extrabold text-white">Soumettre un projet</a>
+        </div>
+        <div class="rounded-[10px] bg-white p-8 shadow-card">
+          <h2 class="mb-3 text-sm font-extrabold uppercase tracking-wide text-primary">Événements à Venir</h2>
+          <div class="space-y-5">
+            <div class="border-b border-slate-100 pb-4"><h4 class="font-extrabold text-heading">Festival de la Musique de Kinshasa</h4><p>20 & 21 Juin 2026</p></div>
+            <div class="border-b border-slate-100 pb-4"><h4 class="font-extrabold text-heading">Forum Provincial de la Jeunesse</h4><p>Août 2026</p></div>
+            <div class="border-b border-slate-100 pb-4"><h4 class="font-extrabold text-heading">Journée du Sport pour Tous</h4><p>Septembre 2026</p></div>
+            <div><h4 class="font-extrabold text-heading">Jeux de Kinshasa & Kinshasa 100 ans</h4><p>Programme spécial 2026</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="partenaires" class="bg-softPrimary">
+      <div class="mx-auto max-w-7xl px-6 py-20 text-center">
+        <h2 class="mb-3 text-sm font-extrabold uppercase tracking-wide text-primary">Partenaires</h2>
+        <h3 class="mb-10 text-4xl font-extrabold text-heading">Institutions et organisations partenaires</h3>
+        <div class="grid gap-5 md:grid-cols-5">
+          <div class="rounded-[10px] bg-white p-6 font-extrabold text-heading shadow-card">Ambassade de France</div>
+          <div class="rounded-[10px] bg-white p-6 font-extrabold text-heading shadow-card">TMB</div>
+          <div class="rounded-[10px] bg-white p-6 font-extrabold text-heading shadow-card">ONG & Institutions</div>
+          <div class="rounded-[10px] bg-white p-6 font-extrabold text-heading shadow-card">Universités & Académies</div>
+          <div class="rounded-[10px] bg-white p-6 font-extrabold text-heading shadow-card">Entreprises privées</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="historique" class="bg-white">
+      <div class="mx-auto grid max-w-7xl gap-8 px-6 py-20 md:grid-cols-3">
+        <div class="rounded-[10px] bg-white p-7 shadow-card"><h3 class="mb-3 text-xl font-extrabold text-heading">Historique</h3><p>Une institution provinciale dédiée à l’encadrement des jeunes, au développement du sport et à la promotion des arts à Kinshasa.</p></div>
+        <div id="cabinet" class="rounded-[10px] bg-white p-7 shadow-card"><h3 class="mb-3 text-xl font-extrabold text-heading">Cabinet du Ministre</h3><p>Coordination des programmes, suivi administratif, relations avec les partenaires et communication officielle.</p></div>
+        <div id="organigramme" class="rounded-[10px] bg-white p-7 shadow-card"><h3 class="mb-3 text-xl font-extrabold text-heading">Organigramme</h3><p>Cabinet, directions techniques, cellules spécialisées et services d’appui aux programmes.</p></div>
+      </div>
+    </section>
+
+    <section class="bg-white">
+      <div class="mx-auto max-w-5xl px-6 py-20 text-center">
+        <div class="rounded-[10px] bg-softPrimary p-8 shadow-card md:p-12">
+          <div class="grid items-center gap-8 md:grid-cols-[180px_1fr]">
+            <img src="assets/img/ministre-bob-amisso.jpg" alt="Bob Amisso Yoka Lumbila" class="mx-auto h-40 w-40 rounded-full object-cover">
+            <blockquote class="text-left">
+              <p class="mb-5 text-lg">"Notre mission est de créer un environnement favorable à l’émergence des jeunes talents, au développement du sport, à la promotion des loisirs sains ainsi qu’au rayonnement de la culture et des arts à Kinshasa."</p>
+              <h5 class="font-extrabold text-heading">Bob Amisso Yoka Lumbila</h5>
+              <p>Ministre provincial de la Jeunesse, Sports & Loisirs, Culture & Arts</p>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact" class="bg-primary text-white">
+    <div class="mx-auto max-w-7xl px-6 py-16">
+      <div class="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
+        <div>
+          <div class="mb-5 flex items-center gap-3">
+            <span class="flex h-14 w-14 items-center justify-center rounded-xl bg-white text-xl font-extrabold text-primary">JS</span>
+            <span class="font-extrabold uppercase leading-5">Ministère<br>Jeunesse, Sports & Arts</span>
+          </div>
+          <p>Cabinet du Ministre<br>Kinshasa — République Démocratique du Congo</p>
+          <p class="mt-4"><a href="mailto:infos@minprov-jeslca.cd">infos@minprov-jeslca.cd</a><br><a href="tel:+243826056802">+243 826056802</a></p>
+        </div>
+        <div>
+          <h4 class="mb-4 font-extrabold">Menu</h4>
+          <ul class="space-y-2">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="le-ministere.html#missions">Vision & missions</a></li>
+            <li><a href="actualites.html">Actualités</a></li>
+            <li><a href="medias.html">Médias</a></li>
+            <li><a href="contact.html">Nous contacter</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="mb-4 font-extrabold">Réseaux sociaux</h4>
+          <ul class="space-y-2">
+            <li><a href="https://www.facebook.com/share/1Fs16w9QRW/?mibextid=wwXIfr" target="_blank" rel="noopener">Facebook officiel</a></li>
+            <li><a href="https://www.instagram.com/min.prov.jeslca?igsh=dnQ3MG16b2NiZ2U2&utm_source=qr" target="_blank" rel="noopener">Instagram</a></li>
+            <li><a href="https://www.tiktok.com/@min.prov.jslca?_r=1&_t=ZS-91uMwiiIJAi" target="_blank" rel="noopener">TikTok</a></li>
+          </ul>
+        </div>
+        <form class="space-y-3">
+          <h4 class="mb-4 font-extrabold">Formulaire de contact</h4>
+          <input class="w-full rounded-md border-0 px-4 py-3 text-heading" type="text" placeholder="Nom complet">
+          <input class="w-full rounded-md border-0 px-4 py-3 text-heading" type="email" placeholder="Adresse mail">
+          <textarea class="h-28 w-full rounded-md border-0 px-4 py-3 text-heading" placeholder="Message"></textarea>
+          <button class="rounded-[10px] bg-danger px-5 py-3 font-extrabold text-white" type="submit">Envoyer</button>
+        </form>
+      </div>
+      <hr class="my-10 border-white/25">
+      <p class="text-center">© 2026 Ministère provincial de la Jeunesse, Sports & Loisirs, Culture & Arts — Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/nav.js"></script>
+  <script src="assets/js/experience.js"></script>
+  <script>
+    const menu = document.getElementById("mainMenu");
+    document.getElementById("menuBtn").addEventListener("click", () => menu.classList.remove("hidden"));
+    document.getElementById("closeMenu").addEventListener("click", () => menu.classList.add("hidden"));
+    menu.querySelectorAll("a").forEach((link) => link.addEventListener("click", () => {
+      if (window.innerWidth < 1024) menu.classList.add("hidden");
+    }));
+    menu.querySelectorAll("li.group > button").forEach((button) => {
+      button.addEventListener("click", () => {
+        if (window.innerWidth >= 1024) return;
+        button.nextElementSibling.classList.toggle("hidden");
+      });
+    });
+
+    const slides = [...document.querySelectorAll(".slide")];
+    const dots = [...document.querySelectorAll(".dot")];
+    let current = 0;
+    function showSlide(index) {
+      current = (index + slides.length) % slides.length;
+      slides.forEach((slide, i) => {
+        slide.style.opacity = i === current ? "1" : "0";
+        slide.classList.toggle("is-active", i === current);
+      });
+      dots.forEach((dot, i) => {
+        dot.classList.toggle("bg-white", i === current);
+        dot.classList.toggle("bg-white/50", i !== current);
+      });
+    }
+    document.getElementById("prevSlide").addEventListener("click", () => showSlide(current - 1));
+    document.getElementById("nextSlide").addEventListener("click", () => showSlide(current + 1));
+    dots.forEach((dot, i) => dot.addEventListener("click", () => showSlide(i)));
+    setInterval(() => showSlide(current + 1), 6000);
+  </script>
+</body>
+</html>
