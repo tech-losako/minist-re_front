@@ -11,7 +11,7 @@
   menu.innerHTML = `
     <div class="mb-8 flex items-center justify-between lg:hidden">
       <h3 class="text-2xl font-extrabold">Ministère</h3>
-      <button id="closeMenu" class="text-3xl leading-none" aria-label="Fermer le menu">&times;</button>
+      <button id="closeMenu" class="text-3xl leading-none" aria-label="Fermer le menu" type="button">&times;</button>
     </div>
     <ul class="flex flex-col gap-2 text-[14px] font-extrabold lg:flex-row lg:items-center lg:gap-4">
       <li><a class="block rounded-md px-2 py-2 ${isActive(["index.html"])}" href="index.html">Accueil</a></li>
@@ -47,14 +47,13 @@
 
       <li class="relative">
         <div class="flex items-center justify-between gap-1 rounded-md px-2 py-2">
-          <a class="${isActive(["actualites.html", "medias.html", "partenaires.html", "contact.html"])}" href="actualites.html">Plus</a>
-          <button class="dropdown-toggle rounded px-1 text-lg leading-none ${isActive(["actualites.html", "medias.html", "partenaires.html", "contact.html"])}" type="button" aria-expanded="false" aria-label="Ouvrir Plus">⌄</button>
+          <a class="${isActive(["actualites.html", "medias.html", "partenaires.html"])}" href="actualites.html">Plus</a>
+          <button class="dropdown-toggle rounded px-1 text-lg leading-none ${isActive(["actualites.html", "medias.html", "partenaires.html"])}" type="button" aria-expanded="false" aria-label="Ouvrir Plus">⌄</button>
         </div>
         <ul class="dropdown-menu hidden rounded-md bg-white py-2 text-heading shadow-card lg:absolute lg:right-0 lg:top-full lg:z-50 lg:min-w-56">
           <li><a class="block px-4 py-2 hover:text-primary" href="actualites.html">Actualités</a></li>
           <li><a class="block px-4 py-2 hover:text-primary" href="medias.html">Médias</a></li>
           <li><a class="block px-4 py-2 hover:text-primary" href="partenaires.html">Partenaires</a></li>
-          <li><a class="block px-4 py-2 hover:text-primary" href="contact.html">Contact</a></li>
         </ul>
       </li>
     </ul>
