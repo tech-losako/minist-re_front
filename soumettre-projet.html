@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soumettre un projet - Ministère Provincial</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: "#007fff",
+            softPrimary: "#edf2fc",
+            heading: "#343f52",
+            body: "#60697b",
+            danger: "#e51b22"
+          },
+          fontFamily: {
+            sans: ["Manrope", "Arial", "sans-serif"]
+          },
+          boxShadow: {
+            card: "0 0.25rem 1.75rem rgba(30,34,40,.07)"
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/experience.css">
+</head>
+<body class="bg-white font-sans text-[16px] font-medium leading-7 text-body">
+  <div class="hidden bg-primary text-white md:block">
+    <div class="mx-auto flex max-w-7xl items-center gap-8 px-6 py-2 text-[15px] font-bold">
+      <span>Kinshasa - Gombe, le 08 Mai 2026</span>
+      <a href="tel:+243826056802" class="ml-auto text-white">+243 826056802</a>
+      <a href="mailto:infos@minprov-jeslca.cd" class="text-white">infos@minprov-jeslca.cd</a>
+    </div>
+  </div>
+  <header class="relative z-40 bg-white shadow-sm">
+    <nav class="relative"></nav>
+  </header>
+
+  <main>
+    <section class="relative overflow-hidden bg-softPrimary">
+      <div class="mx-auto grid max-w-7xl items-center gap-10 px-6 py-16 lg:grid-cols-[0.9fr_1.1fr] lg:py-20">
+        <div>
+          <h1 class="mb-5 text-4xl font-extrabold leading-tight text-heading md:text-5xl">Soumettre un projet</h1>
+          <p class="max-w-2xl text-lg">Présentez votre initiative dans la jeunesse, le sport, les loisirs, la culture ou les arts. Après validation, votre application email s'ouvrira avec le message prêt à envoyer au Ministère.</p>
+        </div>
+        <img src="assets/img/hero section/PHOTO-2026-04-18-14-06-03.jpg" alt="Activité du Ministère provincial" class="h-[320px] w-full rounded-[10px] object-cover shadow-card md:h-[420px]">
+      </div>
+    </section>
+
+    <section class="bg-white">
+      <div class="mx-auto max-w-5xl px-6 py-16">
+        <form id="projectForm" class="rounded-[10px] bg-white p-6 shadow-card md:p-8">
+          <div class="grid gap-5 md:grid-cols-2">
+            <label class="block font-bold text-heading">Nom complet
+              <input class="mt-2 w-full rounded-md border border-slate-200 px-4 py-3 font-medium text-body outline-none focus:border-primary" name="nom" type="text" required>
+            </label>
+            <label class="block font-bold text-heading">Email
+              <input class="mt-2 w-full rounded-md border border-slate-200 px-4 py-3 font-medium text-body outline-none focus:border-primary" name="email" type="email" required>
+            </label>
+            <label class="block font-bold text-heading">Téléphone
+              <input class="mt-2 w-full rounded-md border border-slate-200 px-4 py-3 font-medium text-body outline-none focus:border-primary" name="telephone" type="tel" required>
+            </label>
+            <label class="block font-bold text-heading">Domaine
+              <select class="mt-2 w-full rounded-md border border-slate-200 px-4 py-3 font-medium text-body outline-none focus:border-primary" name="domaine" required>
+                <option value="">Choisir un domaine</option>
+                <option>Jeunesse</option>
+                <option>Sports & Loisirs</option>
+                <option>Culture & Arts</option>
+                <option>Innovation</option>
+                <option>Entrepreneuriat</option>
+                <option>Audiovisuel</option>
+              </select>
+            </label>
+            <label class="block font-bold text-heading md:col-span-2">Titre du projet
+              <input class="mt-2 w-full rounded-md border border-slate-200 px-4 py-3 font-medium text-body outline-none focus:border-primary" name="titre" type="text" required>
+            </label>
+            <label class="block font-bold text-heading md:col-span-2">Résumé du projet
+              <textarea class="mt-2 h-36 w-full rounded-md border border-slate-200 px-4 py-3 font-medium text-body outline-none focus:border-primary" name="resume" required></textarea>
+            </label>
+            <label class="block font-bold text-heading">Commune ou lieu
+              <input class="mt-2 w-full rounded-md border border-slate-200 px-4 py-3 font-medium text-body outline-none focus:border-primary" name="lieu" type="text" required>
+            </label>
+            <label class="block font-bold text-heading">Budget estimatif
+              <input class="mt-2 w-full rounded-md border border-slate-200 px-4 py-3 font-medium text-body outline-none focus:border-primary" name="budget" type="text" placeholder="Ex : 1 000 USD">
+            </label>
+          </div>
+          <div class="mt-7 flex flex-wrap items-center gap-4">
+            <button class="rounded-[10px] bg-danger px-6 py-3 font-extrabold text-white" type="submit">Envoyer la soumission</button>
+            <a class="font-extrabold text-primary" href="mailto:infos@minprov-jeslca.cd">infos@minprov-jeslca.cd</a>
+          </div>
+          <p id="formStatus" class="mt-4 hidden rounded-md bg-softPrimary px-4 py-3 font-bold text-heading"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-[#1f2733] text-white">
+    <div class="mx-auto max-w-7xl px-6 py-14">
+      <div class="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
+        <div>
+          <a href="index.html" class="mb-5 inline-flex bg-white p-2">
+            <img src="assets/img/LOGO 2.jpeg" alt="Ministère provincial de la Jeunesse, Sports & Loisirs, Culture & Arts" class="h-20 w-auto object-contain md:h-24">
+          </a>
+          <p class="text-sm leading-7 text-white/75">Ministère provincial de la Jeunesse, Sports & Loisirs, Culture & Arts de la Ville de Kinshasa.</p>
+        </div>
+        <div>
+          <h4 class="mb-4 text-sm font-extrabold uppercase tracking-wide">Navigation</h4>
+          <ul class="space-y-2 text-sm text-white/75">
+            <li><a class="transition hover:text-white" href="index.html">Accueil</a></li>
+            <li><a class="transition hover:text-white" href="le-ministere.html">Le Ministère</a></li>
+            <li><a class="transition hover:text-white" href="jeunesse.html">Jeunesse</a></li>
+            <li><a class="transition hover:text-white" href="sports-loisirs.html">Sports & Loisirs</a></li>
+            <li><a class="transition hover:text-white" href="culture-arts.html">Culture & Arts</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="mb-4 text-sm font-extrabold uppercase tracking-wide">Informations</h4>
+          <ul class="space-y-2 text-sm text-white/75">
+            <li><a class="transition hover:text-white" href="actualites.html">Actualités</a></li>
+            <li><a class="transition hover:text-white" href="medias.html">Médias</a></li>
+            
+            <li><a class="transition hover:text-white" href="contact.html">Contact</a></li>
+            <li><a class="transition hover:text-white" href="soumettre-projet.html">Soumettre un projet</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="mb-4 text-sm font-extrabold uppercase tracking-wide">Contact</h4>
+          <address class="not-italic text-sm leading-7 text-white/75">
+            Cabinet du Ministre<br>
+            Kinshasa, République Démocratique du Congo<br>
+            <a class="transition hover:text-white" href="mailto:infos@minprov-jeslca.cd">infos@minprov-jeslca.cd</a><br>
+            <a class="transition hover:text-white" href="tel:+243826056802">+243 826056802</a>
+          </address>
+        </div>
+      </div>
+      <div class="mt-10 flex h-[4px] w-full"><span class="flex-1 bg-[#159ada]"></span><span class="flex-1 bg-[#fbef00]"></span><span class="flex-1 bg-[#e51b22]"></span></div>
+      <p class="pt-6 text-center text-sm text-white/65">© 2026 Ministère provincial de la Jeunesse, Sports & Loisirs, Culture & Arts - Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/nav.js"></script>
+  <script src="assets/js/experience.js"></script>
+  <script>
+    const projectForm = document.getElementById("projectForm");
+    const formStatus = document.getElementById("formStatus");
+
+    projectForm.addEventListener("submit", (event) => {
+      event.preventDefault();
+      const data = new FormData(projectForm);
+      const body = [
+        "Nouvelle soumission de projet",
+        "",
+        `Nom complet : ${data.get("nom")}`,
+        `Email : ${data.get("email")}`,
+        `Téléphone : ${data.get("telephone")}`,
+        `Domaine : ${data.get("domaine")}`,
+        `Titre du projet : ${data.get("titre")}`,
+        `Commune ou lieu : ${data.get("lieu")}`,
+        `Budget estimatif : ${data.get("budget") || "Non précisé"}`,
+        "",
+        "Résumé du projet :",
+        data.get("resume")
+      ].join("\n");
+      const subject = `Soumission de projet - ${data.get("titre")}`;
+      window.location.href = `mailto:infos@minprov-jeslca.cd?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      formStatus.textContent = "Votre application email va s'ouvrir avec la soumission prête à envoyer.";
+      formStatus.classList.remove("hidden");
+    });
+  </script>
+</body>
+</html>

@@ -90,10 +90,84 @@ body {
   animation: ringPulse 2.6s ease infinite;
 }
 
+.dropdown-toggle {
+  display: inline-flex;
+  height: 22px;
+  width: 22px;
+  align-items: center;
+  justify-content: center;
+}
+
+.dropdown-toggle::before {
+  border-bottom: 2px solid currentColor;
+  border-right: 2px solid currentColor;
+  content: "";
+  display: block;
+  height: 7px;
+  transform: translateY(-2px) rotate(45deg);
+  width: 7px;
+}
+
+#prevSlide,
+#nextSlide {
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+#prevSlide::before,
+#nextSlide::before,
+.back-to-top::before {
+  border-left: 3px solid currentColor;
+  border-top: 3px solid currentColor;
+  content: "";
+  display: block;
+  height: 13px;
+  width: 13px;
+}
+
+#prevSlide::before {
+  transform: rotate(-45deg);
+}
+
+#nextSlide::before {
+  transform: rotate(135deg);
+}
+
+.back-to-top {
+  align-items: center;
+  justify-content: center;
+}
+
+.back-to-top::before {
+  transform: translateY(3px) rotate(45deg);
+}
+
 .gallery-item {
   cursor: zoom-in;
   overflow: hidden;
   position: relative;
+}
+
+.auto-gallery {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr;
+}
+
+.auto-gallery .gallery-item {
+  display: none;
+}
+
+.auto-gallery .gallery-item.is-active {
+  display: block;
+  animation: fadeUp .55s ease both;
+}
+
+.auto-gallery .gallery-item img {
+  height: 18rem;
+  width: 100%;
+  object-fit: cover;
 }
 
 .gallery-item img {
@@ -187,5 +261,16 @@ body {
     animation-iteration-count: 1 !important;
     scroll-behavior: auto !important;
     transition-duration: .01ms !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .auto-gallery {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  #prevSlide,
+  #nextSlide {
+    display: flex;
   }
 }
