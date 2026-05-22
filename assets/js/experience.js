@@ -116,10 +116,10 @@
       "assets/ministre/2.jpg"
     ],
     "jeunesse.html": [
-      "assets/img/hero section/jeunes/PHOTO-2025-11-18-17-31-30.jpg",
       "assets/img/hero section/jeunes/PHOTO-2026-01-13-22-02-07.jpg",
-      "assets/img/hero section/jeunes/PHOTO-2026-01-28-16-56-58.jpg",
-      "assets/img/hero section/jeunes/PHOTO-2026-03-05-17-43-50.jpg"
+      "assets/img/hero section/jeunes/PHOTO-2025-11-18-17-31-30.jpg",
+      "assets/jeuness/1.jpg",
+      "assets/jeuness/2.jpg"
     ],
     "sports-loisirs.html": [
       "assets/img/hero section/sport/PHOTO-2025-11-19-14-00-33.jpg",
