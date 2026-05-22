@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page en construction | Under Construction</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <style>
+    *,
+    *::before,
+    *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: #0a0a0a;
+      font-family: 'Manrope', Arial, sans-serif;
+      color: #ffffff;
+      overflow: hidden;
+      position: relative;
+    }
+
+    /* Animated background gradient */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 600px 400px at 20% 30%, rgba(0, 127, 255, 0.08) 0%, transparent 70%),
+        radial-gradient(ellipse 500px 350px at 80% 70%, rgba(229, 27, 34, 0.06) 0%, transparent 70%),
+        radial-gradient(ellipse 400px 300px at 50% 50%, rgba(251, 239, 0, 0.04) 0%, transparent 70%);
+      animation: bgPulse 8s ease-in-out infinite alternate;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    @keyframes bgPulse {
+      0% { opacity: 0.5; transform: scale(1); }
+      100% { opacity: 1; transform: scale(1.1); }
+    }
+
+    /* Animated grid pattern */
+    body::after {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+      background-size: 60px 60px;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .container {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      padding: 2rem;
+      max-width: 700px;
+    }
+
+    /* Animated construction icon */
+    .icon-wrapper {
+      width: 120px;
+      height: 120px;
+      margin: 0 auto 2.5rem;
+      position: relative;
+      animation: float 3s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-12px); }
+    }
+
+    .icon-wrapper svg {
+      width: 100%;
+      height: 100%;
+      filter: drop-shadow(0 0 30px rgba(0, 127, 255, 0.3));
+    }
+
+    /* Rotating ring around icon */
+    .icon-ring {
+      position: absolute;
+      inset: -10px;
+      border: 2px solid transparent;
+      border-top-color: #007fff;
+      border-right-color: rgba(0, 127, 255, 0.3);
+      border-radius: 50%;
+      animation: spin 4s linear infinite;
+    }
+
+    .icon-ring::after {
+      content: '';
+      position: absolute;
+      inset: 6px;
+      border: 2px solid transparent;
+      border-bottom-color: #e51b22;
+      border-left-color: rgba(229, 27, 34, 0.3);
+      border-radius: 50%;
+      animation: spin 3s linear infinite reverse;
+    }
+
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+
+    /* Flag stripe */
+    .flag-stripe {
+      display: flex;
+      width: 180px;
+      height: 5px;
+      margin: 0 auto 2.5rem;
+      border-radius: 10px;
+      overflow: hidden;
+      animation: stripeGlow 2s ease-in-out infinite alternate;
+    }
+
+    .flag-stripe span {
+      flex: 1;
+    }
+
+    .flag-stripe span:nth-child(1) { background: #159ada; }
+    .flag-stripe span:nth-child(2) { background: #fbef00; }
+    .flag-stripe span:nth-child(3) { background: #e51b22; }
+
+    @keyframes stripeGlow {
+      0% { box-shadow: 0 0 10px rgba(0, 127, 255, 0.3); }
+      100% { box-shadow: 0 0 20px rgba(229, 27, 34, 0.3); }
+    }
+
+    h1 {
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      font-weight: 800;
+      margin-bottom: 0.5rem;
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+      background: linear-gradient(135deg, #ffffff 0%, #a0c4ff 50%, #ffffff 100%);
+      background-size: 200% 200%;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      animation: shimmer 3s ease-in-out infinite;
+    }
+
+    @keyframes shimmer {
+      0%, 100% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+    }
+
+    .subtitle {
+      font-size: clamp(1rem, 2.5vw, 1.3rem);
+      font-weight: 500;
+      color: rgba(255, 255, 255, 0.5);
+      margin-bottom: 2.5rem;
+      font-style: italic;
+    }
+
+    .message {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      color: rgba(255, 255, 255, 0.7);
+      margin-bottom: 1rem;
+    }
+
+    .lang-divider {
+      width: 60px;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+      margin: 2rem auto;
+    }
+
+    .en {
+      color: rgba(255, 255, 255, 0.45);
+    }
+
+    /* Animated dots */
+    .dots {
+      display: inline-flex;
+      gap: 6px;
+      margin-top: 2.5rem;
+    }
+
+    .dots span {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: #007fff;
+      animation: dotPulse 1.4s ease-in-out infinite;
+    }
+
+    .dots span:nth-child(2) { animation-delay: 0.2s; }
+    .dots span:nth-child(3) { animation-delay: 0.4s; }
+
+    @keyframes dotPulse {
+      0%, 80%, 100% { transform: scale(0.6); opacity: 0.4; }
+      40% { transform: scale(1); opacity: 1; }
+    }
+
+    /* Back button */
+    .back-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 3rem;
+      padding: 14px 32px;
+      background: transparent;
+      border: 2px solid rgba(255, 255, 255, 0.15);
+      border-radius: 10px;
+      color: rgba(255, 255, 255, 0.7);
+      font-family: 'Manrope', sans-serif;
+      font-size: 0.95rem;
+      font-weight: 700;
+      text-decoration: none;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .back-btn:hover {
+      border-color: #007fff;
+      color: #ffffff;
+      background: rgba(0, 127, 255, 0.1);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 30px rgba(0, 127, 255, 0.15);
+    }
+
+    .back-btn svg {
+      width: 18px;
+      height: 18px;
+      transition: transform 0.3s ease;
+    }
+
+    .back-btn:hover svg {
+      transform: translateX(-4px);
+    }
+
+    /* Entrance animation */
+    .container > * {
+      animation: fadeUp 0.8s ease-out both;
+    }
+
+    .container > *:nth-child(1) { animation-delay: 0.1s; }
+    .container > *:nth-child(2) { animation-delay: 0.2s; }
+    .container > *:nth-child(3) { animation-delay: 0.3s; }
+    .container > *:nth-child(4) { animation-delay: 0.4s; }
+    .container > *:nth-child(5) { animation-delay: 0.5s; }
+    .container > *:nth-child(6) { animation-delay: 0.6s; }
+    .container > *:nth-child(7) { animation-delay: 0.7s; }
+    .container > *:nth-child(8) { animation-delay: 0.8s; }
+    .container > *:nth-child(9) { animation-delay: 0.9s; }
+
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="icon-wrapper">
+      <div class="icon-ring"></div>
+      <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <!-- Gear icon -->
+        <circle cx="50" cy="50" r="18" stroke="#007fff" stroke-width="3" opacity="0.8"/>
+        <circle cx="50" cy="50" r="8" fill="#007fff" opacity="0.6"/>
+        <!-- Gear teeth -->
+        <rect x="47" y="24" width="6" height="12" rx="2" fill="#007fff" opacity="0.7"/>
+        <rect x="47" y="64" width="6" height="12" rx="2" fill="#007fff" opacity="0.7"/>
+        <rect x="24" y="47" width="12" height="6" rx="2" fill="#007fff" opacity="0.7"/>
+        <rect x="64" y="47" width="12" height="6" rx="2" fill="#007fff" opacity="0.7"/>
+        <rect x="29.5" y="29.5" width="6" height="12" rx="2" fill="#007fff" opacity="0.7" transform="rotate(-45 32.5 35.5)"/>
+        <rect x="62.5" y="58.5" width="6" height="12" rx="2" fill="#007fff" opacity="0.7" transform="rotate(-45 65.5 64.5)"/>
+        <rect x="58.5" y="29.5" width="6" height="12" rx="2" fill="#007fff" opacity="0.7" transform="rotate(45 61.5 35.5)"/>
+        <rect x="29.5" y="58.5" width="6" height="12" rx="2" fill="#007fff" opacity="0.7" transform="rotate(45 32.5 64.5)"/>
+      </svg>
+    </div>
+
+    <div class="flag-stripe">
+      <span></span><span></span><span></span>
+    </div>
+
+    <h1>Page en construction</h1>
+    <p class="subtitle">Nous y travaillons activement</p>
+    <p class="message">
+      Cette page est actuellement en cours de développement.<br>
+      Elle sera bientôt disponible avec du contenu complet.<br>
+      Merci pour votre patience !
+    </p>
+
+    <div class="lang-divider"></div>
+
+    <h1 class="en" style="-webkit-text-fill-color: rgba(255,255,255,0.45); background: none;">Under Construction</h1>
+    <p class="subtitle en">We are actively working on it</p>
+    <p class="message en">
+      This page is currently under development.<br>
+      It will be available soon with full content.<br>
+      Thank you for your patience!
+    </p>
+
+    <div class="dots">
+      <span></span><span></span><span></span>
+    </div>
+
+    <a href="index.html" class="back-btn">
+      <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M10 19l-7-7m0 0l7-7m-7 7h18"/>
+      </svg>
+      Retour à l'accueil / Back to home
+    </a>
+  </div>
+</body>
+
+</html>

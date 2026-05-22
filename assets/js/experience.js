@@ -105,15 +105,15 @@
   // DYNAMIC HERO CAROUSEL LOGIC
   const HERO_IMAGES = {
     "index.html": [
-      "assets/img/hero section/accueil/1.jpg",
+      "assets/img/hero section/accueil/ministre.jpg",
       "assets/img/hero section/accueil/2.jpg",
       "assets/img/hero section/accueil/3.jpg"
     ],
     "le-ministere.html": [
-      "assets/img/hero section/ministere/1.jpg",
-      "assets/img/hero section/ministere/2.jpg",
-      "assets/img/hero section/ministere/3.jpg",
-      "assets/img/hero section/ministere/4.jpg"
+      "assets/ministre/3.jpeg",
+      "assets/ministre/4.jpeg",
+      "assets/ministre/1.jpg",
+      "assets/ministre/2.jpg"
     ],
     "jeunesse.html": [
       "assets/img/hero section/jeunes/PHOTO-2025-11-18-17-31-30.jpg",
@@ -134,9 +134,9 @@
       "assets/img/hero section/culture/PHOTO-2026-04-18-14-06-22.jpg"
     ],
     "actualites.html": [
-      "assets/img/hero section/actualites/1.jpg",
-      "assets/img/hero section/actualites/2.jpg",
-      "assets/img/hero section/actualites/3.jpg"
+      "assets/img/hero section/actualité/1.jpeg",
+      "assets/img/hero section/actualité/3.jpeg",
+      "assets/img/hero section/actualité/4.jpeg"
     ],
     "medias.html": [
       "assets/img/hero section/galerie/PHOTO-2025-11-18-17-31-53.jpg",
@@ -146,14 +146,14 @@
       "assets/img/hero section/galerie/PHOTO-2026-04-26-15-29-18.jpg"
     ],
     "legals.html": [
-      "assets/img/hero section/legals/1.jpg",
-      "assets/img/hero section/legals/2.jpg",
-      "assets/img/hero section/legals/3.jpg"
+      "assets/ministre/1.jpg",
+      "assets/ministre/3.jpeg",
+      "assets/ministre/4.jpeg"
     ],
     "contact.html": [
-      "assets/img/hero section/contact/1.jpg",
-      "assets/img/hero section/contact/2.jpg",
-      "assets/img/hero section/contact/3.jpg"
+      "assets/ministre/WhatsApp Image 2026-05-21 at 12.59.31 (1).jpeg",
+      "assets/ministre/1.jpeg",
+      "assets/ministre/PHOTO-2026-04-18-14-06-22.jpg"
     ],
     "partenaires.html": [
       "assets/img/hero section/partenaires/1.jpg",
