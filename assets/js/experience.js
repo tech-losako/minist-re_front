@@ -122,10 +122,10 @@
       "assets/jeuness/2.jpg"
     ],
     "sports-loisirs.html": [
-      "assets/img/hero section/sport/PHOTO-2025-11-19-14-00-33.jpg",
-      "assets/img/hero section/sport/PHOTO-2026-02-28-19-58-19.jpg",
-      "assets/img/hero section/sport/PHOTO-2026-02-28-20-11-38.jpg",
-      "assets/img/hero section/sport/PHOTO-2026-04-14-10-39-35.jpg"
+      "assets/img/hero section/sport/3.jpg",
+      "assets/img/hero section/sport/1.jpg",
+      "assets/img/hero section/sport/2.jpg",
+      "assets/img/hero section/sport/4.jpg"
     ],
     "culture-arts.html": [
       "assets/img/hero section/culture/PHOTO-2026-04-26-15-27-34.jpg",
@@ -139,7 +139,6 @@
       "assets/img/hero section/actualité/4.jpeg"
     ],
     "medias.html": [
-      "assets/img/hero section/galerie/PHOTO-2025-11-18-17-31-53.jpg",
       "assets/img/hero section/galerie/PHOTO-2025-11-29-14-07-12.jpg",
       "assets/img/hero section/galerie/PHOTO-2026-02-04-17-42-07.jpg",
       "assets/img/hero section/galerie/PHOTO-2026-04-18-14-06-19.jpg",
