@@ -150,9 +150,9 @@
       "assets/ministre/4.jpeg"
     ],
     "contact.html": [
-      "assets/ministre/WhatsApp Image 2026-05-21 at 12.59.31 (1).jpeg",
-      "assets/ministre/1.jpeg",
-      "assets/ministre/PHOTO-2026-04-18-14-06-22.jpg"
+      "assets/img/hero section/actualité/1.jpeg",
+      "assets/img/hero section/actualité/3.jpeg",
+      "assets/img/hero section/actualité/4.jpeg"
     ],
     "partenaires.html": [
       "assets/img/hero section/partenaires/1.jpg",

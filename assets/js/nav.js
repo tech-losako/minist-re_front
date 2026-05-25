@@ -52,13 +52,14 @@
           <li><a class="block rounded-md px-2 py-2 ${isActive(["culture-arts.html"])}" href="culture-arts.html">Culture</a></li>
           <li class="relative">
             <div class="flex items-center justify-between gap-1 rounded-md px-2 py-2">
-              <a class="${isActive(["actualites.html", "medias.html", "legals.html"])}" href="actualites.html">Plus</a>
-              <button class="dropdown-toggle rounded px-1 text-lg leading-none ${isActive(["actualites.html", "medias.html", "legals.html"])}" type="button" aria-expanded="false" aria-label="Ouvrir Plus"></button>
+              <a class="${isActive(["actualites.html", "medias.html", "legals.html", "contact.html"])}" href="actualites.html">Plus</a>
+              <button class="dropdown-toggle rounded px-1 text-lg leading-none ${isActive(["actualites.html", "medias.html", "legals.html", "contact.html"])}" type="button" aria-expanded="false" aria-label="Ouvrir Plus"></button>
             </div>
             <ul class="dropdown-menu hidden rounded-md bg-white py-2 text-heading shadow-card lg:absolute lg:right-0 lg:top-full lg:z-50 lg:min-w-56">
               <li><a class="block px-4 py-2 hover:text-primary" href="actualites.html">Actualites</a></li>
               <li><a class="block px-4 py-2 hover:text-primary" href="medias.html">Medias</a></li>
               <li><a class="block px-4 py-2 hover:text-primary" href="legals.html">Legals</a></li>
+              <li><a class="block px-4 py-2 hover:text-primary" href="contact.html">Contact</a></li>
             </ul>
           </li>
         </ul>
