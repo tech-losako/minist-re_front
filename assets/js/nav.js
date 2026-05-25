@@ -62,6 +62,7 @@
             </ul>
           </li>
         </ul>
+        <a href="https://jeslca-mini-prov-enregistrement.vercel.app/" target="_blank" rel="noopener" class="mt-6 block w-full rounded-[10px] bg-primary px-5 py-3 text-center text-sm font-extrabold text-white shadow-card lg:hidden">S'enregistrer</a>
       </div>
       <a href="https://jeslca-mini-prov-enregistrement.vercel.app/" target="_blank" rel="noopener" class="ml-5 hidden rounded-[10px] bg-primary px-5 py-2.5 text-sm font-extrabold text-white shadow-card md:inline-flex">S'enregistrer</a>
     </div>
