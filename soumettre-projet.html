@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Soumettre un projet - Ministère Provincial</title>
+  <link rel="icon" type="image/png" href="./assets/favicon.png">
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -31,6 +33,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/experience.css">
 </head>
+
 <body class="bg-white font-sans text-[16px] font-medium leading-7 text-body">
   <div class="hidden bg-primary text-white md:block">
     <div class="mx-auto flex max-w-7xl items-center gap-8 px-6 py-2 text-[15px] font-bold">
@@ -48,9 +51,12 @@
       <div class="mx-auto grid max-w-7xl items-center gap-10 px-6 py-16 lg:grid-cols-[0.9fr_1.1fr] lg:py-20">
         <div>
           <h1 class="mb-5 text-4xl font-extrabold leading-tight text-heading md:text-5xl">Soumettre un projet</h1>
-          <p class="max-w-2xl text-lg">Présentez votre initiative dans la jeunesse, le sport, les loisirs, la culture ou les arts. Après validation, votre application email s'ouvrira avec le message prêt à envoyer au Ministère.</p>
+          <p class="max-w-2xl text-lg">Présentez votre initiative dans la jeunesse, le sport, les loisirs, la culture ou
+            les arts. Après validation, votre application email s'ouvrira avec le message prêt à envoyer au Ministère.
+          </p>
         </div>
-        <img src="assets/img/hero section/PHOTO-2026-04-18-14-06-03.jpg" alt="Activité du Ministère provincial" class="h-[320px] w-full rounded-[10px] object-cover shadow-card md:h-[420px]">
+        <img src="assets/img/hero section/PHOTO-2026-04-18-14-06-03.jpg" alt="Activité du Ministère provincial"
+          class="h-[320px] w-full rounded-[10px] object-cover shadow-card md:h-[420px]">
       </div>
     </section>
 
@@ -59,16 +65,24 @@
         <form id="projectForm" class="rounded-[10px] bg-white p-6 shadow-card md:p-8">
           <div class="grid gap-5 md:grid-cols-2">
             <label class="block font-bold text-heading">Nom complet
-              <input class="mt-2 w-full rounded-md border border-slate-200 px-4 py-3 font-medium text-body outline-none focus:border-primary" name="nom" type="text" required>
+              <input
+                class="mt-2 w-full rounded-md border border-slate-200 px-4 py-3 font-medium text-body outline-none focus:border-primary"
+                name="nom" type="text" required>
             </label>
             <label class="block font-bold text-heading">Email
-              <input class="mt-2 w-full rounded-md border border-slate-200 px-4 py-3 font-medium text-body outline-none focus:border-primary" name="email" type="email" required>
+              <input
+                class="mt-2 w-full rounded-md border border-slate-200 px-4 py-3 font-medium text-body outline-none focus:border-primary"
+                name="email" type="email" required>
             </label>
             <label class="block font-bold text-heading">Téléphone
-              <input class="mt-2 w-full rounded-md border border-slate-200 px-4 py-3 font-medium text-body outline-none focus:border-primary" name="telephone" type="tel" required>
+              <input
+                class="mt-2 w-full rounded-md border border-slate-200 px-4 py-3 font-medium text-body outline-none focus:border-primary"
+                name="telephone" type="tel" required>
             </label>
             <label class="block font-bold text-heading">Domaine
-              <select class="mt-2 w-full rounded-md border border-slate-200 px-4 py-3 font-medium text-body outline-none focus:border-primary" name="domaine" required>
+              <select
+                class="mt-2 w-full rounded-md border border-slate-200 px-4 py-3 font-medium text-body outline-none focus:border-primary"
+                name="domaine" required>
                 <option value="">Choisir un domaine</option>
                 <option>Jeunesse</option>
                 <option>Sports & Loisirs</option>
@@ -79,20 +93,29 @@
               </select>
             </label>
             <label class="block font-bold text-heading md:col-span-2">Titre du projet
-              <input class="mt-2 w-full rounded-md border border-slate-200 px-4 py-3 font-medium text-body outline-none focus:border-primary" name="titre" type="text" required>
+              <input
+                class="mt-2 w-full rounded-md border border-slate-200 px-4 py-3 font-medium text-body outline-none focus:border-primary"
+                name="titre" type="text" required>
             </label>
             <label class="block font-bold text-heading md:col-span-2">Résumé du projet
-              <textarea class="mt-2 h-36 w-full rounded-md border border-slate-200 px-4 py-3 font-medium text-body outline-none focus:border-primary" name="resume" required></textarea>
+              <textarea
+                class="mt-2 h-36 w-full rounded-md border border-slate-200 px-4 py-3 font-medium text-body outline-none focus:border-primary"
+                name="resume" required></textarea>
             </label>
             <label class="block font-bold text-heading">Commune ou lieu
-              <input class="mt-2 w-full rounded-md border border-slate-200 px-4 py-3 font-medium text-body outline-none focus:border-primary" name="lieu" type="text" required>
+              <input
+                class="mt-2 w-full rounded-md border border-slate-200 px-4 py-3 font-medium text-body outline-none focus:border-primary"
+                name="lieu" type="text" required>
             </label>
             <label class="block font-bold text-heading">Budget estimatif
-              <input class="mt-2 w-full rounded-md border border-slate-200 px-4 py-3 font-medium text-body outline-none focus:border-primary" name="budget" type="text" placeholder="Ex : 1 000 USD">
+              <input
+                class="mt-2 w-full rounded-md border border-slate-200 px-4 py-3 font-medium text-body outline-none focus:border-primary"
+                name="budget" type="text" placeholder="Ex : 1 000 USD">
             </label>
           </div>
           <div class="mt-7 flex flex-wrap items-center gap-4">
-            <button class="rounded-[10px] bg-danger px-6 py-3 font-extrabold text-white" type="submit">Envoyer la soumission</button>
+            <button class="rounded-[10px] bg-danger px-6 py-3 font-extrabold text-white" type="submit">Envoyer la
+              soumission</button>
             <a class="font-extrabold text-primary" href="mailto:infos@minprov-jeslca.cd">infos@minprov-jeslca.cd</a>
           </div>
           <p id="formStatus" class="mt-4 hidden rounded-md bg-softPrimary px-4 py-3 font-bold text-heading"></p>
@@ -106,9 +129,12 @@
       <div class="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
         <div>
           <a href="index.html" class="mb-5 inline-flex bg-white p-2">
-            <img src="assets/img/LOGO 2.jpeg" alt="Ministère provincial de la Jeunesse, Sports & Loisirs, Culture & Arts" class="h-20 w-auto object-contain md:h-24">
+            <img src="assets/img/LOGO 2.jpeg"
+              alt="Ministère provincial de la Jeunesse, Sports & Loisirs, Culture & Arts"
+              class="h-20 w-auto object-contain md:h-24">
           </a>
-          <p class="text-sm leading-7 text-white/75">Ministère provincial de la Jeunesse, Sports & Loisirs, Culture & Arts de la Ville de Kinshasa.</p>
+          <p class="text-sm leading-7 text-white/75">Ministère provincial de la Jeunesse, Sports & Loisirs, Culture &
+            Arts de la Ville de Kinshasa.</p>
         </div>
         <div>
           <h4 class="mb-4 text-sm font-extrabold uppercase tracking-wide">Navigation</h4>
@@ -125,7 +151,7 @@
           <ul class="space-y-2 text-sm text-white/75">
             <li><a class="transition hover:text-white" href="actualites.html">Actualités</a></li>
             <li><a class="transition hover:text-white" href="medias.html">Médias</a></li>
-            
+
             <li><a class="transition hover:text-white" href="contact.html">Contact</a></li>
             <li><a class="transition hover:text-white" href="soumettre-projet.html">Soumettre un projet</a></li>
           </ul>
@@ -140,8 +166,10 @@
           </address>
         </div>
       </div>
-      <div class="mt-10 flex h-[4px] w-full"><span class="flex-1 bg-[#159ada]"></span><span class="flex-1 bg-[#fbef00]"></span><span class="flex-1 bg-[#e51b22]"></span></div>
-      <p class="pt-6 text-center text-sm text-white/65">© 2026 Ministère provincial de la Jeunesse, Sports & Loisirs, Culture & Arts - Tous droits réservés.</p>
+      <div class="mt-10 flex h-[4px] w-full"><span class="flex-1 bg-[#159ada]"></span><span
+          class="flex-1 bg-[#fbef00]"></span><span class="flex-1 bg-[#e51b22]"></span></div>
+      <p class="pt-6 text-center text-sm text-white/65">© 2026 Ministère provincial de la Jeunesse, Sports & Loisirs,
+        Culture & Arts - Tous droits réservés.</p>
     </div>
   </footer>
 
@@ -175,4 +203,5 @@
     });
   </script>
 </body>
+
 </html>
