@@ -63,9 +63,9 @@
             </ul>
           </li>
         </ul>
-        <a href="https://registration.minprov-jeslca.cd" target="_self" rel="noopener" class="mt-6 block w-full rounded-[10px] bg-primary px-5 py-3 text-center text-sm font-extrabold text-white shadow-card lg:hidden">Register</a>
+        <a href="https://registration.minprov-jeslca.cd" target="_self" rel="noopener" class="mt-6 block w-full rounded-[10px] bg-primary px-5 py-3 text-center text-sm font-extrabold text-white shadow-card lg:hidden">S'identifier</a>
       </div>
-      <a href="https://registration.minprov-jeslca.cd" target="_self" rel="noopener" class="ml-5 hidden rounded-[10px] bg-primary px-5 py-2.5 text-sm font-extrabold text-white shadow-card md:inline-flex">Register</a>
+      <a href="https://registration.minprov-jeslca.cd" target="_self" rel="noopener" class="ml-5 hidden rounded-[10px] bg-primary px-5 py-2.5 text-sm font-extrabold text-white shadow-card md:inline-flex">S'identifier</a>
     </div>
     <div class="absolute bottom-0 left-0 flex h-[5px] w-full">
       <span class="flex-1 bg-[#159ada]"></span>
