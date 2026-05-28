@@ -18,6 +18,64 @@ body {
     linear-gradient(90deg, rgba(21, 154, 218, .35), rgba(251, 239, 0, .22), rgba(229, 27, 34, .3));
 }
 
+/* ── Fête de la Musique – KIN MIZIKI ELONGO ── */
+.fete-musique-gradient {
+  background:
+    linear-gradient(135deg, rgba(30, 12, 80, .93) 0%, rgba(0, 80, 200, .88) 40%, rgba(0, 127, 255, .82) 70%, rgba(120, 40, 200, .85) 100%);
+  border: 1px solid rgba(255, 215, 0, .25);
+  box-shadow:
+    0 0 40px rgba(255, 215, 0, .15),
+    0 8px 32px rgba(0, 0, 0, .35),
+    inset 0 1px 0 rgba(255, 255, 255, .12);
+  backdrop-filter: blur(6px);
+}
+
+.fete-badge-glow {
+  text-shadow: 0 0 12px rgba(255, 215, 0, .6), 0 0 30px rgba(255, 215, 0, .3);
+  animation: badgePulse 2.5s ease-in-out infinite;
+}
+
+.fete-title-shimmer {
+  background: linear-gradient(90deg, #fff 0%, #fff 40%, #fde68a 50%, #fff 60%, #fff 100%);
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shimmer 4s ease-in-out infinite;
+}
+
+.fete-prize-pulse {
+  animation: prizePulse 2s ease-in-out infinite;
+  box-shadow: 0 0 12px rgba(250, 204, 21, .5);
+}
+
+.fete-cta-btn {
+  box-shadow:
+    0 0 20px rgba(250, 204, 21, .4),
+    0 4px 15px rgba(0, 0, 0, .2);
+  animation: ctaGlow 2s ease-in-out infinite;
+}
+
+@keyframes badgePulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: .85; transform: scale(1.02); }
+}
+
+@keyframes shimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+@keyframes prizePulse {
+  0%, 100% { transform: scale(1); box-shadow: 0 0 12px rgba(250, 204, 21, .5); }
+  50% { transform: scale(1.05); box-shadow: 0 0 22px rgba(250, 204, 21, .8); }
+}
+
+@keyframes ctaGlow {
+  0%, 100% { box-shadow: 0 0 20px rgba(250, 204, 21, .4), 0 4px 15px rgba(0, 0, 0, .2); }
+  50% { box-shadow: 0 0 35px rgba(250, 204, 21, .65), 0 4px 20px rgba(0, 0, 0, .3); }
+}
+
 .hero-caption {
   animation: heroRise .9s ease both;
 }
