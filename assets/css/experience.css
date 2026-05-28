@@ -21,13 +21,13 @@ body {
 /* ── Fête de la Musique – KIN MIZIKI ELONGO ── */
 .fete-musique-gradient {
   background:
-    linear-gradient(135deg, rgba(30, 12, 80, .93) 0%, rgba(0, 80, 200, .88) 40%, rgba(0, 127, 255, .82) 70%, rgba(120, 40, 200, .85) 100%);
+    linear-gradient(135deg, rgba(30, 12, 80, .70) 0%, rgba(0, 80, 200, .65) 40%, rgba(0, 127, 255, .55) 70%, rgba(120, 40, 200, .60) 100%);
   border: 1px solid rgba(255, 215, 0, .25);
   box-shadow:
     0 0 40px rgba(255, 215, 0, .15),
     0 8px 32px rgba(0, 0, 0, .35),
     inset 0 1px 0 rgba(255, 255, 255, .12);
-  backdrop-filter: blur(6px);
+  backdrop-filter: blur(10px);
 }
 
 .fete-badge-glow {
