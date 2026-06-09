@@ -242,7 +242,7 @@ body {
   transform: scale(1.08);
 }
 
-.gallery-item::after {
+.gallery-item:not(:has(video))::after {
   align-items: center;
   background: rgba(0, 127, 255, .68);
   color: #fff;
@@ -254,9 +254,10 @@ body {
   opacity: 0;
   position: absolute;
   transition: opacity .3s ease;
+  pointer-events: none;
 }
 
-.gallery-item:hover::after {
+.gallery-item:not(:has(video)):hover::after {
   opacity: 1;
 }
 
